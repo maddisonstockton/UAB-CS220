@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: pink;
+    position: sticky;
+    top:0;
+    border-bottom: solid;
+    width: 100%;
+    text-align:center;
+}
+
+img{
+    max-width: 50%;
+}
+
+p{
+    padding: 1em;
+}
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+    background-color:lightslategrey;
+    width: 80%;
+    text-align: center;
+}
+footer{
+    background-color:darkseagreen;
+    position: fixed;
+    bottom: 0;
+    right:0;
+    width: 100%;
+    text-align: center;
+}
