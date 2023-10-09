@@ -1,0 +1,228 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: grid;
+    width: 100vw;
+    background-color: pink;
+    max-width: 100%;
+    margin: 0;
+    justify-content: space-around;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    }
+
+  .header-name {
+    font-weight: bold;
+    font-size: 5vh;
+    color: darkolivegreen
+  }
+
+  /*This chunk of code changes the size of my name in the header
+  when on a mobile device*/
+  @media (max-width: 768px) {
+    .header-name{
+    font-size: 3vh;
+    }
+  }
+  
+  /*ChatGPT was prompted for the hamburger menu with the prompt 
+  "HTML Create a hamburger menu with 3 links that only appears when on a mobile device"*/
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color:darkolivegreen;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    ul.hidden {
+        display: none;
+    }
+
+    ul.visible {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #333;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+
+    ul.visible li {
+        padding: 10px;
+        text-align: right;
+    }
+}
+
+  input[type="checkbox"]:checked ~ ul.visible {
+   display: flex;
+}
+
+
+  .logo{
+    height: 10vh;
+    width: 7vw;
+    border: 0;
+  }
+  
+  .nav-bar {
+    justify-content: space-around;
+    display: flex;
+    padding-right: 50px;
+    list-style: none;
+  }
+  
+  .nav-item {
+    margin: 0 30px;
+  }
+  
+  body {
+      background-color: tan;
+      text-align: center;
+  }
+  
+  img {
+      border: 10px solid darkolivegreen;
+      border-radius: 7px;
+    }
+
+    /*This media query changes the size of the logofor mobile devices.*/
+
+    @media (max-width: 768px) {
+      .logo{
+        width: 20%;
+      }
+    }
+
+  .me{
+    width:25%;
+    height: 35%;
+  }
+
+  p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: center;
+  }
+  
+  h1{
+      color: darkolivegreen;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-size: 30px;
+  }
+  
+  h2{
+      font-size: 24px;
+      margin-bottom: 30px;
+      color: darkolivegreen;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+
+  /* I have changed my margin for my border to create a cleaner look on mobile.*/
+  
+    body {
+      width: auto;
+      padding: 10px;
+      border: 10px solid #DAF7A6;
+      margin: 0;
+  }
+  
+  
+  ul{
+    text-align: center;
+    font-size: large;
+    list-style: none;
+  }
+  
+  a {
+      color:black;
+      text-decoration: none;
+      font-size: large;
+  }
+  
+  a:hover{
+      background-color: tan;
+  }
+  
+  .nav-item a:hover {
+    border-bottom: 3px solid darkolivegreen;
+    }
+  
+  .github{
+        color:darkolivegreen;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .grid-item {
+    padding: 60px;
+    background: pink;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+
+/*This media query was added to resize my grid when on a mobile device*/
+  @media (max-width: 768px) {
+    .grid-container{
+    grid-template-columns: 1fr;
+    }
+  }
+  
+  form{
+    padding-left: 20%;
+    text-align: left;
+  }
+  
+  
+  .letter{
+    margin-left: 50%;
+    margin-top: -75%;
+    width: 200px;
+  }
+  
+  /*Changes the size and position of letter when on mobile*/
+  @media (max-width: 768px) {
+    .letter {
+      width: 25%;
+      border: 0px;
+      margin-bottom: 35%;
+      margin-left: 70%;
+    }
+  }
+  
