@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>JavaScript Grades</title>
+    <link rel="stylesheet" href="mbstockt.hw8.css">
+    <script>
+        let myGrade;
+        let grade = prompt("Enter the student's numeric grade.");
+        console.log("Grade: " + grade);
+        if (grade >= 90){
+            myGrade = "A";
+            console.log("Letter Grade: A");
+                }
+            else if (grade >=80 && grade < 90){
+                myGrade = "B";
+                console.log("Letter Grade: B");
+            }
+            else if (grade >=70 && grade < 80){
+                myGrade = "C";
+                console.log("Letter Grade: C");
+            }
+            else if (grade >=60 && grade < 70){
+                myGrade = "D";
+                console.log("Letter Grade: D");
+            }
+            else if (grade <=59 ){
+                myGrade = "F";
+                console.log("Letter Grade: F");
+            }
+            else{
+                console.log("Please refresh and insert a proper numerical value.")
+            }
+
+        if (myGrade == "A"){
+            console.log("Reward: Candy");
+        }
+            else if(myGrade == "B"){
+                console.log("Reward: Apple")
+            }
+            else if(myGrade == "C"){
+                console.log("Reward: Mint")
+            }
+            else if(myGrade == "D"){
+             console.log("Reward: Pencil")
+            }
+            else{
+             console.log("Reward: Awkward conversation with your parents")
+            }
+    </script>
+</head>
+ <p>Hello, please look at my console.</p>
+<body>
+
+</body>
+
+</html>
