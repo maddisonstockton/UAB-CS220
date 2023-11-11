@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+}
+
+body{
+display: flex; 
+flex-direction: column; 
+height: 100vh; 
+width: 100vw; 
+justify-content: center; 
+align-items: center; 
+background-color: #E1BEE7;
+}
+
+#rock{
+    background-color: #F8BBD0;
+    height: 10vh;
+    width: 15vw;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+#paper{
+    background-color: #90CAF9;
+    height: 10vh;
+    width: 15vw;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+#scissors{
+    background-color: #A5D6A7;
+    height: 10vh;
+    width: 15vw;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+#winner{
+    font-size: larger;
+}
+
+
