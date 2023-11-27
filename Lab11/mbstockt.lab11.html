@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!-- In my head I am establishing my meta which will help me have a responsive webpage, 
+    what my tab will be titled when open, and I will also be linking my style sheet for css. -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Finder</title>
+    <link rel="stylesheet" href="mbstockt.lab11.css">
+</head>
+
+<!-- In my body, I am establishing a class that will hold my book search that includes a bar that prompts you
+to enter a book title or author and a search button. I also included a div for my search results. As well as
+linking my javascript. -->
+<body>
+    <div class = "holder">
+        <h1>Book Finder</h1>
+        <input type = "text" id = "search" placeholder= "Enter book title or author">
+        <button onclick = "bookFinder()">Search</button>
+        <div id="results"></div>
+    </div>
+    <script src="mbstockt.lab11.js" type = "text/javascript"></script>
+</body>
+
+</html>
